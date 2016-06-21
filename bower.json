@@ -1,0 +1,26 @@
+{
+  "name": "alfehrest_graph_frontend",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Mostafa Abdelraouf"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery-ui": "^1.11.4",
+    "jquery": "^2.2.1",
+    "vis": "^4.15.1",
+    "simplebar": "^1.1.9",
+    "jq-calendars": "https://github.com/drdrsh/calendars.git#406e8dcc97b99900a27ed3b6babf29d6f3390f5f"
+  }
+}

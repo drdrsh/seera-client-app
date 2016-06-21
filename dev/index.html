@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<title> نموذج تفاعلي للعلاقات بين كتب التراث وكتابها - الفهرست  %T%</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="HandheldFriendly" content="True">
+
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+	<meta name="description" content="%D% نموذج تفاعلي للعلاقات بين كتب التراث وكتابها">
+	<meta name="author" content="Mostafa Abdelraouf">
+	<meta property="og:title" content="الفهرست %T%">
+	<meta property="og:og:site_name" content="الفهرست - AlFehrest">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="http://experiments.alfehrest.org/public/alkindi/images/thumb.png">
+	<meta property="og:url" content="http://experiments.alfehrest.org/public/alkindi/%U%">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="الفهرست %T%">
+	<meta name="twitter:description" content="%D% نموذج تفاعلي للعلاقات بين كتب التراث وكتابها">
+	<meta name="twitter:creator" content="@alfehrest">
+
+	<!-- build:css:dist style/style.css -->
+	<link rel="stylesheet" type="text/css" href="./assets/lib/jquery-ui/jquery-ui.css" />
+	<link rel="stylesheet" type="text/css" href="./assets/lib/vis/vis.css" />
+	<link rel="stylesheet" type="text/css" href="./assets/lib/simplebar/simplebar.css" />
+	<link rel="stylesheet" type="text/css" href="./assets/app/css/style.css" />
+	<!-- /build -->
+
+</head>
+<body>
+	<h1 class="logo"></h1>
+	<div id="side-panel">
+		<div id="menu-panel">
+			<h1 class="logo"></h1>
+			<ul class="side-menu">
+				<li class="close"></li>
+				<li class="search">بحث</li>
+				<li class="help">مساعدة</li>
+				<li class="about">هذا العمل</li>
+				<li class="restart">إعادة البدء</li>
+				<li class="rel"></li>
+				<li class="ref"></li>
+			</ul>
+			<div class="social-media-pane">
+				<a class="share facebook" href="" target="_blank"></a>
+				<a class="share google"   href="" target="_blank"></a>
+				<a class="share twitter"  href="" target="_blank"></a>
+				<a class="share reddit"   href="" target="_blank"></a>
+				<br clear='all'>
+			</div>
+		</div>
+		<div id="info-panel" class="simplebar" data-simplebar-direction="vertical">
+			<div class="info-container">
+				<h1 class="logo"></h1>
+				<h2></h2>
+				<h3 class="content"></h3>
+				<p class="content loading"></p>
+				<h3 class="relationships">العلاقات</h3>
+				<ol class="relationships"></ol>
+				<h3 class="references"></h3>
+				<ol class="references"></ol>
+			</div>
+		</div>
+	</div>
+
+	<div id="error">
+		<p></p>
+		<button>إعادة المحاولة</button>
+	</div>
+
+	<div id="search-container"><input type="text" placeholder="بحث"></div>
+
+	<!--
+	<div id="timeline-container"></div>
+	-->
+	<div id="loading"></div>
+
+	<div id="top-panel">
+
+		<div id="graph-container"></div>
+
+
+		<div id="about-dialog">
+			<p>
+				هذا النموذج هو إصدار تجريبي يعرض العلاقات بين بعض شخصيات السيرة النبوية بعضها البعض وبين قبائل العرب.
+				 النموذج تابع لمشروع
+				<a href="http://blog.alfehrest.org">الفهرست</a>
+				وهو مشروع يهدف لعرض التاريخ بشكل تفاعلي.
+			</p>
+			<p>
+				قام بالتنفيذ التقني<a href="http://twitter.com/droushi">مصطفى عبد الرءوف</a>
+				.
+				<!--
+				<br>
+				شكرا لمحمد المعتصم على مساعدته في تصميم واجهة المستخدم.
+				-->
+				<br>
+				<br>
+				للتواصل يمكنك مراسلتنا على
+				<a href="mailto:mostafa@alfehrest.org">mostafa@alfehrest.org</a>
+			</p>
+		</div>
+
+	</div>
+
+
+	<script type="text/javascript">var AlFehrestNS = {};</script>
+
+	<!-- build:remove:dist -->
+	<script>
+		AlFehrestNS.imagePath = "./assets/app/images/";
+		AlFehrestNS.env = "development";
+	</script>
+	<!-- /build -->
+
+	<!-- build:template:dist
+    <script>
+    AlFehrestNS.imagePath="<%= imagePath %>";
+    AlFehrestNS.env = "production";
+    </script>
+    /build -->
+
+	<!-- build:js:dist js/scripts.js -->
+	<script type="text/javascript" src="./assets/lib/jquery/jquery.js"></script>
+	<script type="text/javascript" src="./assets/lib/jquery-ui/jquery-ui.js"></script>
+	<script type="text/javascript" src="./assets/lib/vis/vis.js"></script>
+	<script type="text/javascript" src="./assets/lib/simplebar/simplebar.js"></script>
+
+	<script type="text/javascript" src="./assets/lib/jquery-calendars/jquery.calendars.js"></script>
+	<script type="text/javascript" src="./assets/lib/jquery-calendars/jquery.calendars.islamic.js"></script>
+	<script type="text/javascript" src="./assets/lib/jquery-calendars/jquery.calendars.julian.js"></script>
+
+	<script type="text/javascript" src="./assets/app/js/Language.js"></script>
+	<script type="text/javascript" src="./assets/app/language/ar.js"></script>
+	<script type="text/javascript" src="./assets/app/js/SearchManager.js"></script>
+	<script type="text/javascript" src="./assets/app/js/LocalStorage.js"></script>
+	<script type="text/javascript" src="./assets/app/js/main.js"></script>
+	<script type="text/javascript" src="./assets/app/js/HelpEngine.js"></script>
+	<script type="text/javascript" src="./assets/app/js/main-req.js"></script>
+	<script type="text/javascript" src="./assets/app/js/Config.js"></script>
+	<script type="text/javascript" src="./assets/app/js/template.js"></script>
+	<script type="text/javascript" src="./assets/app/js/main-vis.js"></script>
+	<!-- /build -->
+
+	<script>AlFehrestNS.loadLanguage('ar');</script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-990635-18', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+</body>
+</html>
