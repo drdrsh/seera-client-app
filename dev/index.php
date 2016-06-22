@@ -1,5 +1,5 @@
 <?php
-define('API_URL', 'http://api.alfehrest.org/alkindi/');
+define('API_URL', 'http://api.alfehrest.org/seera/');
 
 function do_fallback() {
     $content = file_get_contents('index.html');
@@ -11,7 +11,7 @@ function do_fallback() {
 }
 function get_url($entityId, $language)
 {
-    $allowedTypes = array('work', 'authority');
+    $allowedTypes = array('person', 'tribe');
     $allowedLanguages = array('ar');
 
     list($entityType, $id) = explode('_', $entityId);
@@ -22,7 +22,7 @@ function get_url($entityId, $language)
         http_response_code(404);
         do_fallback();
     }
-    $fieldName = $entityType=='work'?'title':'name';
+    $fieldName = 'name';
     $url = API_URL . "{$entityType}/{$entityId}/?fields=$fieldName";
 
     $ch = curl_init();

@@ -1,7 +1,7 @@
 AlFehrestNS.Config = function(key) {
     var config = {
         'production' : {
-            'url' : 'http://api.alfehrest.org/alkindi/',
+            'url' : 'http://api.alfehrest.org/seera/',
             'startupNodeId' : 'person_241d581b957d9',
             'MAX_REL_COUNT': 7,
             'MAX_NAME_LENGTH' : 50
